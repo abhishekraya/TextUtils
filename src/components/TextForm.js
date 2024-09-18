@@ -38,7 +38,7 @@ export default function TextForm(props) {
             <div className="container">
                 {/* <label htmlFor="myBox" className="form-label">Example textarea</label> */}
                 <div className="mb-3">
-                <textarea className="form-control" id="myBox" rows="8" value={text} onChange={handleOnChange}></textarea>
+                <textarea className="form-control"style={{backgroundColor: props.mode==='dark'?'grey':'white'}} id="myBox" rows="8" value={text} onChange={handleOnChange}></textarea>
                 </div>
                 <button className="btn btn-primary" onClick={handleUpClick}>Convert to Ucase</button>
                 <button className="btn btn-primary mx-3" onClick={handleLoClick}>Convert to Lcase</button>
